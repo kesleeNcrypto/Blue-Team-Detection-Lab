@@ -1,0 +1,8 @@
+# Extract Suricata alerts
+jq 'select(.alert != null)' /var/log/suricata/eve.json
+
+# Extract failed SSH logins from Cowrie
+jq 'select(.eventid=="cowrie.login.failed")' /var/log/cowrie/cowrie.json
+
+# Correlate events by source IP
+jq 'select(.src_ip=="192.168.56.102")' /var/log/cowrie/cowrie.json
