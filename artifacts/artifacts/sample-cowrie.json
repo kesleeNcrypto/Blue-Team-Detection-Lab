@@ -1,0 +1,8 @@
+{
+  "eventid": "cowrie.login.failed",
+  "timestamp": "2026-01-05T14:32:19.456789Z",
+  "src_ip": "192.168.56.102",
+  "username": "root",
+  "password": "password123",
+  "protocol": "ssh"
+}
