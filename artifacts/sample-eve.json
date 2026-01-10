@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-01-05T14:32:18.123456+0000",
+  "src_ip": "192.168.56.102",
+  "dest_ip": "192.168.56.101",
+  "dest_port": 2222,
+  "proto": "TCP",
+  "alert": {
+    "signature": "ET SCAN Potential SSH Scan",
+    "category": "Attempted Information Leak",
+    "severity": 2
+  }
+}
