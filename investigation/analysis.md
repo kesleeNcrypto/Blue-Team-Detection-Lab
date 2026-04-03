@@ -1,4 +1,4 @@
-# Detection Analysis & Log Correlation
+# Investigation: Detection Analysis & Log Correlation
 
 ## Objective
 
