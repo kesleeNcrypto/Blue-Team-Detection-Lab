@@ -105,11 +105,69 @@ multi-layer visibility of the same adversarial activity.
   across different telemetry layers
 
 ---
+---
+
+## Screenshots
+
+### Attack Simulation (Kali Linux)
+
+![Attack Simulation](screenshots/attack-simulation.png)
+
+Simulated SSH brute-force activity from Kali Linux targeting Cowrie honeypot.
+
+---
+
+### Suricata Detection Alerts
+
+![Suricata Alerts](screenshots/suricata-alert.png)
+
+Suricata generated alerts from detected SSH brute-force activity.
+
+---
+
+### Cowrie Honeypot Activity
+
+![Cowrie Logs](screenshots/cowrie-log.png)
+
+Cowrie captured attacker login attempts and session activity.
+
+---
+
+### Wazuh Agent Monitoring
+
+![Wazuh Agents](screenshots/wazuh-agents.png)
+
+Wazuh agent monitoring endpoint visibility and system telemetry.
+
+---
+
+### Wazuh Security Events
+
+![Wazuh Security Events](screenshots/wazuh-security-events.png)
+
+Security alerts aggregated and analyzed through Wazuh SIEM.
+
+---
+
+### MITRE ATT&CK Detection Mapping
+
+![MITRE Detection](screenshots/wazuh-mitre-detection.png)
+
+Detection events mapped to MITRE ATT&CK techniques.
+
+---
 
 ## MITRE ATT&CK Mapping
 
+Observed activity mapped to the following techniques:
+
 - **T1110** — Brute Force  
 - **T1021.004** — Remote Services: SSH  
+- **T1548.003** — Privilege Escalation  
+- **T1078** — Valid Accounts  
+- **T1110.001** — Password Guessing  
+
+These detections were validated through Wazuh SIEM correlation and multi-layer telemetry analysis.
 
 ---
 
@@ -133,6 +191,18 @@ multi-layer visibility of the same adversarial activity.
 - jq
 - Linux (Ubuntu, Kali)
 - VirtualBox
+
+---
+
+## SOC Workflow Demonstrated
+
+1. Attack Simulation
+2. Network Detection (Suricata)
+3. Application Detection (Cowrie)
+4. SIEM Correlation (Wazuh)
+5. MITRE ATT&CK Mapping
+6. Detection Validation
+This workflow mirrors real-world SOC operations and detection engineering processes.
 
 ---
 
