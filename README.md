@@ -149,6 +149,42 @@ Security alerts aggregated and analyzed through Wazuh SIEM.
 
 ---
 
+## 🇳🇬 NITDA Compliance Simulation
+
+### Context
+Following NITDA's cybersecurity directive requiring MDAs to strengthen detection, monitoring, and incident response capabilities, this lab has been extended to simulate real-world compliance aligned with national and global frameworks.
+
+---
+
+### Frameworks Addressed
+
+| Framework       | Purpose                     | Coverage                                   |
+|----------------|----------------------------|--------------------------------------------|
+| NIST CSF       | Security lifecycle          | Detection + response workflows             |
+| MITRE ATT&CK   | Adversary behavior          | SSH brute-force, privilege escalation      |
+| MITRE D3FEND   | Defensive countermeasures   | Honeypot deception, network isolation      |
+| MITRE F3       | Fraud & abuse scenarios     | Credential abuse, account takeover         |
+| NCPS 2021      | National policy             | Monitoring, logging, IR alignment          |
+
+---
+
+### Architecture Alignment
+
+- **Suricata** → Network detection *(NIST DE.CM, NCPS monitoring)*  
+- **Cowrie** → Deception telemetry *(MITRE D3FEND: Decoy Systems)*  
+- **Wazuh** → Log aggregation & correlation *(NIST DE.AE)*  
+- **Splunk** → Enterprise SIEM visibility *(Centralized logging requirement)*  
+- **n8n** → Automated response workflows *(NIST RS.RP)*  
+
+---
+
+### What This Demonstrates
+
+- Detection engineering aligned with real compliance requirements  
+- Cross-layer telemetry correlation *(network + application + SIEM)*  
+- Practical implementation of SOC monitoring pipelines  
+- Mapping of **attacks → detections → frameworks → response**  
+
 ### MITRE ATT&CK Detection Mapping
 
 ![MITRE Detection](screenshots/wazuh-mitre-detection.png)
