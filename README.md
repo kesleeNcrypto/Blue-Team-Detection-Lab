@@ -1,4 +1,15 @@
-# Blue Team Detection Lab
+# Blue Team Detection Lab — SOC Monitoring & Detection Engineering
+
+A practical, end-to-end Security Operations Center (SOC) lab simulating real-world detection, alert correlation, and incident analysis using multi-layer telemetry.
+
+This project demonstrates how attacker activity can be:
+- detected at the network layer (Suricata)
+- observed at the application layer (Cowrie honeypot)
+- correlated through SIEM pipelines (Wazuh / Splunk)
+
+Built under constrained conditions, this lab reflects realistic environments where visibility, tooling, and response capabilities must be engineered not assumed.
+
+It has been further extended to align with cybersecurity frameworks (MITRE ATT&CK, NIST CSF, NCPS) and simulate compliance-driven detection workflows.
 
 ![Security](https://img.shields.io/badge/Security-Blue%20Team-blue)
 ![Status](https://img.shields.io/badge/Project-Active-success)
@@ -30,6 +41,7 @@
 - SSH honeypot deployment (Cowrie) using least-privilege isolation
 - Controlled attack simulation from Kali Linux
 - Cross-layer correlation using raw logs and jq (no SIEM shortcuts)
+  
 
 ## Overview
 
@@ -183,7 +195,9 @@ Following NITDA's cybersecurity directive requiring MDAs to strengthen detection
 - Detection engineering aligned with real compliance requirements  
 - Cross-layer telemetry correlation *(network + application + SIEM)*  
 - Practical implementation of SOC monitoring pipelines  
-- Mapping of **attacks → detections → frameworks → response**  
+- Mapping of **attacks → detections → frameworks → response**
+
+See the [`compliance`](./compliance/) folder for framework-aligned detection mappings. 
 
 ### MITRE ATT&CK Detection Mapping
 
