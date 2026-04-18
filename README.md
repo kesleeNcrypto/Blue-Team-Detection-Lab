@@ -208,10 +208,12 @@ This workflow mirrors real-world SOC operations and detection engineering proces
 
 ## Why This Matters
 
-This lab simulates real SOC workflows including detection, alert validation,
++. This lab simulates real SOC workflows including detection, alert validation,
 and attacker observation under constrained conditions. It emphasizes
 decision-making, signal validation, and operational realism beyond
 theoretical or tool-only learning.
+
++. This lab is one layer of a broader security engineering portfolio spanning endpoint detection, cloud security posture management, and AI-powered threat intelligence automation."
 
 ---
 ## Resume-Ready Highlights
